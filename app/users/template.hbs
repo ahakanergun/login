@@ -1,0 +1,14 @@
+<h2 id="title">Kullanıcı Ekle</h2>
+{{#bs-form action="submit"}}
+  {{#bs-form-group validation=firstNameValidation}}
+      <label class="control-label">İsim girin:</label>
+      {{bs-input type="text" value=firstname}}
+      {{#bs-button type="primary" action='addUser'}}EKLE{{/bs-button}}
+  {{/bs-form-group}}
+{{/bs-form}}
+<ul class="list-group">
+    <li class="list-group-item">{{#if firstname}}{{firstname}}{{else}}Yeni Kullanıcı{{/if}}</li>
+  {{#each model as |user|}}
+      <li class="list-group-item">{{user.name}}: {{user.age}}</li>
+  {{/each}}
+</ul>
