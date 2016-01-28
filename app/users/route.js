@@ -12,5 +12,10 @@ export default Ember.Route.extend({
       name: "Hasan Hüseyin",
       age: "18"
     }];
+  },
+  actions: {
+    addUser() {
+      alert(this.get('firstName'));
+    }
   }
 });
