@@ -19,7 +19,7 @@ export default function() {
 
     // Collections
     this.get('/contacts');
-    this.get('/contacts', 'users');
+    this.get('/contacts', 'user');
     this.get('/contacts', ['contacts', 'addresses']);
 
     // Single objects
