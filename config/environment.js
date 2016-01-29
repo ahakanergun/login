@@ -12,6 +12,10 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    firebase: 'https://popping-inferno-4688.firebaseio.com/',
+    torii: {
+      sessionServiceName: 'session'
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
