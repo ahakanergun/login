@@ -19,12 +19,12 @@ export default function() {
 
     // Collections
     this.get('/contacts');
-    this.get('/contacts', 'user');
+    this.get('/contacts', 'users');
     this.get('/contacts', ['contacts', 'addresses']);
 
     // Single objects
     this.get('/contacts/:id');
-    this.get('/contacts/:id', 'user');
+    this.get('/contacts/:id', 'users');
     this.get('/contacts/:id', ['contact', 'addresses']);
   */
 
@@ -32,21 +32,21 @@ export default function() {
     POST shorthands
 
     this.post('/contacts');
-    this.post('/contacts', 'user'); // specify the type of resource to be created
+    this.post('/contacts', 'users'); // specify the type of resource to be created
   */
 
   /*
     PUT shorthands
 
     this.put('/contacts/:id');
-    this.put('/contacts/:id', 'user'); // specify the type of resource to be updated
+    this.put('/contacts/:id', 'users'); // specify the type of resource to be updated
   */
 
   /*
     DELETE shorthands
 
     this.del('/contacts/:id');
-    this.del('/contacts/:id', 'user'); // specify the type of resource to be deleted
+    this.del('/contacts/:id', 'users'); // specify the type of resource to be deleted
 
     // Single object + related resources. Make sure parent resource is first.
     this.del('/contacts/:id', ['contact', 'addresses']);
