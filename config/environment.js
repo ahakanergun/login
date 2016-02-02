@@ -12,7 +12,7 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-    firebase: 'https://popping-inferno-4688.firebaseio.com/',
+    firebase: 'https://ember-login.firebaseio.com/',
     torii: {
       sessionServiceName: 'session'
     },
