@@ -1,3 +1,9 @@
 <h2>Kullanıcı Listesi</h2>
+<ul class="list-group">
+    <li class="list-group-item">{{#if firstName}}{{firstName}}{{else}}Yeni Kullanıcı{{/if}}</li>
+  {{#each model as |users|}}
+      <li class="list-group-item">{{users.name}}: {{users.age}}</li>
+  {{/each}}
+</ul>
 <h4>{{#link-to 'user.new'}}Kullanıcı Ekle{{/link-to}}</h4>
 {{outlet}}
