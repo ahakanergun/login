@@ -41,6 +41,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "emberfire": "1.6.4",
+    "liquid-fire": "0.23.0",
     "torii": "0.6.1"
   }
 }
