@@ -1,6 +1,10 @@
-# Example Login [not public]
+# Ember JS 2.0 Example Application  [not public]
 
 An example application built with Ember JS using ember-cli tool.
+
+## Live Demo
+
+<https://ember-login.firebaseapp.com>
 
 ## Prerequisites
 
